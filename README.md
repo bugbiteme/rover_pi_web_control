@@ -1,5 +1,5 @@
 # rover_pi_web_control
-This iis the rover_pi_web_control using the web.py framework
+This idea is the rover_pi_web_control using the web.py framework
 
 The idea is to be able to control a raspi rover using a web browser interface
 
