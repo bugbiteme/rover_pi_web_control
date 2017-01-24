@@ -1,15 +1,33 @@
-$def with (greeting)
-
-<html>
-    <head>
-        <title>Gothons Of Planet Percal #25</title>
-    </head>
+$def with (form, title)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>$title</title>
+ <link rel="stylesheet" type="text/css" href="/static/main.css">
+<link href="/static/bootstrap.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 <body>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span4">
+      <img src="/static/rpi.jpg" />
+      
+      </div>
+    <div class="content">
+    <div class="span8">
+      <p>Rover Pi
+        <br />
+        by LLLabs </p>
+<form class="form" method="post"> 
+        $:form.render()
+        </form>
+       
+    </div>
+    </div>
+  </div>
+</div>
 
-$if greeting:
-    I just wanted to say <em style="color: green; font-size: 2em;">$greeting</em>.
-$else:
-    <em>Hello</em>, world!
 
 </body>
 </html>
