@@ -70,15 +70,15 @@ class index:
             GPIO.output(PIN_IN4, True)
             print "REVERSE" #prints the status in Pi's Terminal
             
-        elif userData.btn == "left":
+        elif userData.btn == "right":
             
             GPIO.output(PIN_IN1, True)
             GPIO.output(PIN_IN2, False)
             
             GPIO.output(PIN_IN3, False)
             GPIO.output(PIN_IN4, True)
-            print "LEFT" #prints the status in Pi's Terminal
-        elif userData.btn == "right":
+            print "RIGHT" #prints the status in Pi's Terminal
+        elif userData.btn == "left":
             
             GPIO.output(PIN_IN1, False)
             GPIO.output(PIN_IN2, True)
